@@ -26,9 +26,12 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
+
   background: #111827;
   position: sticky;
   top: 0;
+
+  z-index: 9999;
 }
 
 .logo {
