@@ -16,7 +16,7 @@ function Home() {
               machinery.
             </p>
           </div>
-          s
+      
           <div className="feature-card">
             <h3>HMI Development</h3>
 
