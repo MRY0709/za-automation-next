@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer className="footer">
-      <h2>ZA Automation Technical Services LLC</h2>
+      <h2>Zaki Abbas Technical Services LLC</h2>
 
       <p>Complete Automation Solutions for Piling Machinery</p>
 
@@ -13,19 +13,9 @@ function Footer() {
 
       <p>✉️ zaki@zaautomation.com</p>
 
-      <div className="footer-links">
-        <Link href="/">Home</Link>
-
-        <Link href="/services">Services</Link>
-
-        <Link href="/users">Clients</Link>
-
-        <Link href="/about">About</Link>
-
-        <Link href="/contact">Contact</Link>
-      </div>
-
-      <p className="copyright">© 2026 ZA Automation. All Rights Reserved.</p>
+      <p className="copyright">
+        © 2026 Zaki Abbas Technical Services LLC. All Rights Reserved.
+      </p>
     </footer>
   );
 }
