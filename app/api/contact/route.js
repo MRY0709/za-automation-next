@@ -1,10 +1,27 @@
 import { Resend } from "resend";
+import { supabase } from "@/lib/supabase";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req) {
   try {
     const { name, email, message } = await req.json();
+    const { error: dbError } = await supabase.from("contact_messages").insert([
+      {
+        name,
+        email,
+        message,
+      },
+    ]);
+
+    if (dbError) {
+      console.error("Supabase Error:", dbError);
+
+      return Response.json({
+        success: false,
+        error: dbError.message,
+      });
+    }
 
     const data = await resend.emails.send({
       from: "ZA Automation <zaki@zaautomation.com>",
