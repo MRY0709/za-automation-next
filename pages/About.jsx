@@ -1,4 +1,3 @@
-
 function About() {
   return (
     <section className="about-page">
@@ -24,6 +23,27 @@ function About() {
             Complete automation solutions for piling machinery and foundation
             equipment with advanced diagnostics and industrial control systems.
           </p>
+        </div>
+        <div className="about-stats">
+          <div className="stat-card">
+            <h3>PLC & HMI</h3>
+            <p>Industrial Automation</p>
+          </div>
+
+          <div className="stat-card">
+            <h3>CANbus</h3>
+            <p>Diagnostics Experts</p>
+          </div>
+
+          <div className="stat-card">
+            <h3>UAE</h3>
+            <p>Wide Service Coverage</p>
+          </div>
+
+          <div className="stat-card">
+            <h3>Piling</h3>
+            <p>Machinery Specialists</p>
+          </div>
         </div>
       </div>
     </section>
