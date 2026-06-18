@@ -5,7 +5,7 @@ function Home() {
       <Hero />
 
       <section className="features">
-        <h2 className="section-title">Industrial Services</h2>
+        <h2 className="section-title">INDUSTRIAL SERVICES</h2>
 
         <div className="feature-grid">
           <div className="feature-card">
@@ -16,7 +16,7 @@ function Home() {
               machinery.
             </p>
           </div>
-      
+
           <div className="feature-card">
             <h3>HMI Development</h3>
 
